@@ -104,6 +104,7 @@ def userLogin(request):
                 messages.error(request, 'Invalid username or password. Please try again.')
                 # Return the form with entered username to make it easier for the user
                 return render(request, 'meet/userlogin.html', {'form': form})
+            # it doesnt matter 
     else:
         form = UserLoginForm()
     
