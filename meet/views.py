@@ -103,7 +103,7 @@ def userLogin(request):
             except UserRegister.DoesNotExist:
                 messages.error(request, 'Invalid username or password. Please try again.')
                 # Return the form with entered username to make it easier for the user
-                return render(request, 'meet/userLogin.html', {'form': form})
+                return render(request, 'meet/userlogin.html', {'form': form})
     else:
         form = UserLoginForm()
     
